@@ -1,49 +1,55 @@
 import React from "react";
-import Header from "./Header";
 
-const grids = [[1,2,3], [4, 5, 6], [6, 7, 8]]
-
-
-class Board extends React.Component {
-	render(){
-		const headerRow = 
-			<tr>
-				<th>  </th>
-				<th> 1 </th>
-				<th> 2 </th>
-				<th> 3 </th>
-				<th> 4 </th>
-				<th> 5 </th>
-				<th> 6 </th>
-				<th> 7 </th>
-				<th> 8 </th>
-				<th> 9 </th>
-				<th> 10 </th>
-			 </tr>
-			
-	const gridLayout = grids.map((row, index) => {
-		return <tr>{row.map((grid, colIndex) => {
-			return( 
-			<td style={{width: "50px", height: "50px"}}>
-				<grid></grid>
-				<p>{`i:${index}:${colIndex}`}</p>
-			</td>
-			)
-		})}</tr>
-	})
-	return (
-		<div>
-			<div className="board">
-			<table> 
-				{headerRow}
-				{gridLayout}
-			</table>
-		</div>
-	</div>
-
-		)
-	}
-	
+function numberToLetterSpecial(number){
+	if (number === 0) return 
+	var letters = [0,"A","B","C","D","E","F","G","H","I","J"]
+	var letterY = letters[number]
+	return letterY
 }
-	 
-export default Board;
+function numberToLetter(number){
+	var letters = [0,"A","B","C","D","E","F","G","H","I","J"]
+	var letterY = letters[number]
+	return letterY
+}
+
+
+const ColumnHeader = () => {
+	const headerArray = Array(10)
+	headerArray.fill(1)
+	const something = headerArray.map((thing , index) => 
+		index > 0  ? <div>{index}</div> : <div></div>
+	)
+	return <div className="row">{something}</div>
+}
+
+function GridColumns(props) {
+  const rows = props.rows
+  const columns = rows.map((row, rowNumber) => 
+	<div className="row"><div>{numberToLetterSpecial(rowNumber)}</div><GridRow grids={rows} rowNumber={rowNumber + 1}/></div>
+	)
+  return columns
+}
+
+function Grid(props) {
+	const columnNumber = props.columnNumber 
+	const rowLetter = props.rowLetter
+	return <div className="square unselected"></div>
+}
+
+function GridRow(props) {
+  const grids = props.grids
+	const rowNumber = props.rowNumber
+	const rowLetter = numberToLetter(rowNumber)
+	const gridItems = grids.map((grid, columnNumber) => 
+		<Grid columnNumber={columnNumber} rowLetter={rowLetter}/>
+  )
+  return <div className="column">{gridItems}</div>
+}
+function Board(){
+  const rowArray = Array(10)
+  const gridArray = Array(10).fill(rowArray)
+  return <div className="board"> <ColumnHeader/> <GridColumns style={{width: "200px"}} rows={gridArray}/></div>
+}
+export default Board
+
+
