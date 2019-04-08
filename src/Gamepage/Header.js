@@ -2,6 +2,6 @@ import React from "react";
 
 const Header = () => 
 	<div>
-		<p> hi I'm the header</p>
+		<p> Your board</p>
 	</div> 
 export default Header;
