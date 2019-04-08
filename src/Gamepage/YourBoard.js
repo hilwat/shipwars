@@ -18,7 +18,8 @@ const ColumnHeader = () => {
 	const headerArray = Array(11)
 	headerArray.fill(1)
 	const something = headerArray.map((thing , index) => 
-		index > 0  ? <div className="board-square board-head-top">{index}</div> : <div className="board-square board-head-top"></div>
+		index > 0  ? <div className="board-square board-head-top">{index}</div> : 
+		<div className="board-square board-head-top"></div>
 	)
 	return <div className="board-row">{something}</div>
 }
@@ -35,7 +36,7 @@ function Grid(props) {
 	const columnNumber = props.columnNumber 
 	const rowLetter = props.rowLetter
 	const onClick = () => console.log(columnNumber, rowLetter)
-	return <div className="board-square board-unselected board-normal" onClick={onClick}>{rowLetter}{columnNumber+1}</div>
+	return <div className="board-square board-unselected board-normal" onClick={onClick}></div>
 }
 
 function GridRow(props) {
@@ -43,14 +44,14 @@ function GridRow(props) {
 	const rowNumber = props.rowNumber
 	const rowLetter = numberToLetter(rowNumber)
 	const gridItems = grids.map((grid, columnNumber) => 
-		<Grid columnNumber={columnNumber} rowLetter={rowLetter}/>
+		<Grid columnNumber={columnNumber +1} rowLetter={rowLetter}/>
   )
   return <div className="board-row">{gridItems}</div>
 }
-function Board(){
+function YourBoard(){
   const rowArray = Array(10)
   const gridArray = Array(10).fill(rowArray)
   return <div className="board"> <ColumnHeader/> <GridColumns style={{width: "20px"}} rows={gridArray}/></div>
 }
-export default Board
+export default YourBoard
 
