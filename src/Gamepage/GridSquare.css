@@ -1,6 +1,4 @@
-body {
-	background: #F5F5F5;
-}
+
 .board-square {
 	height: 1.6rem;
 	width: 1.6rem;
@@ -44,9 +42,10 @@ body {
 	width: 500px;
 }
 .board {
-	height: 320px;
+	height: 20em;
 	text-align: center;
 	background: #FFFFFF;
 	box-shadow: 0 4px 0 0 rgba(0,0,0,0.10);
+	width: 20em;
 }
 

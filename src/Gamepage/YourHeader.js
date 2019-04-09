@@ -1,7 +1,7 @@
 import React from "react";
 
-const Header = () => 
+const YourHeader = () => 
 	<div>
 		<p> Your board</p>
 	</div> 
-export default Header;
+export default YourHeader;

@@ -1,0 +1,21 @@
+.board-with-panel{
+	display: flex;
+}
+
+.left-panel{
+	flex:1;
+	background: #F5F5F5;
+}
+.middle-panel{
+	flex:1;
+	background-color: black;
+}
+
+.right-panel{
+	flex:1;
+	color: pink;
+}
+
+nav {
+	background-color: grey;
+}
