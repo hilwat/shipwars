@@ -3,8 +3,11 @@ import React from "react";
 import YourBoard from "./YourBoard.js"
 import Footer from "./Footer.js"
 import YourHeader from "./YourHeader.js"
-import ShipSelector from "./ShipSelector.js"
+import YourShipSelector from "./YourShipSelector.js"
 import './Gamepage.css';
+import OppBoard from "./OppBoard.js";
+import OppHeader from "./OppHeader.js"
+import Chatboard from "./Chatboard.js"
 
 
 const Gamepage = () => (
@@ -15,13 +18,15 @@ const Gamepage = () => (
 			<div className="left-panel">
 				<YourHeader></YourHeader>
 				<YourBoard></YourBoard>
-				<ShipSelector></ShipSelector>
+				<YourShipSelector></YourShipSelector>
 			</div> 
 			<div className="middle-panel">
 				<p> this is the chatbot section</p>
+				<Chatboard></Chatboard>
 			</div>
 			<div className="right-panel">
-				<p>this is the opponents board</p>
+				<OppHeader></OppHeader>
+				<OppBoard></OppBoard>
 			</div>
 		</div>
 	<div>

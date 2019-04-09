@@ -1,7 +1,7 @@
 import React from "react";
 
-const ShipSelector = () => 
+const YourShipSelector = () => 
 	<div>
 		<p> hi I'm the ShipSelector</p>
 	</div> 
-export default ShipSelector;
+export default YourShipSelector;

@@ -3,6 +3,7 @@
 	height: 1.6rem;
 	width: 1.6rem;
 	border-radius: 5px;
+	color: #B0BEC5;
 }
 .board-normal{
 	margin: 1px;
@@ -11,13 +12,11 @@
 .board-head-top{
 	margin: 8px 0.8px 0px 0.8px;
 	font-family: 'Roboto', sans-serif;
-	color: #B0BEC5;
 }
 
 .board-head-left{
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
-	color: #B0BEC5;
 }
 
 .board-unselected {
@@ -47,5 +46,6 @@
 	background: #FFFFFF;
 	box-shadow: 0 4px 0 0 rgba(0,0,0,0.10);
 	width: 20em;
+	margin: 0.5em;
 }
 

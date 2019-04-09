@@ -1,0 +1,14 @@
+.messageboard p {
+	background-color: aquamarine;
+}
+
+.yourmsg {
+
+}
+.oppmsg{
+	display: flex;
+	text-justify: right;
+} 
+.system{
+
+}
