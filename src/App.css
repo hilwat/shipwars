@@ -1,0 +1,11 @@
+/* fonts */
+
+@font-face {
+  font-family: 'PhosphateInline';
+  src: url(/src/Font/PhosphateInline.ttf);
+}
+
+@font-face {
+  font-family: 'PhosphateSolid';
+  src: url(/src/Font/PhosphateSolid.ttf);
+}

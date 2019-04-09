@@ -1,7 +1,7 @@
 import React from "react";
 
 const OppHeader = () => 
-	<div>
-		<p> Opposition board</p>
+	<div className="headermsg">
+		<a> Opposition board</a>
 	</div> 
 export default OppHeader;

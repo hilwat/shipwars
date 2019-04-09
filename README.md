@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TO DO 
+- font: phosphate see if it will run if not remove Font folder and @font-face in app.css
 
 ## Available Scripts
 

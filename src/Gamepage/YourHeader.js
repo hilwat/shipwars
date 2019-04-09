@@ -1,7 +1,7 @@
 import React from "react";
 
 const YourHeader = () => 
-	<div>
-		<p> Your board</p>
+	<div className="headermsg">
+		<a> Your board</a>
 	</div> 
 export default YourHeader;

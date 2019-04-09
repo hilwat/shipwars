@@ -1,7 +1,15 @@
-.messageboard p {
-	background-color: aquamarine;
+.containermsg{
+
 }
 
+.headermsg{
+	background-color: #F5F5F5;
+	padding: 0.5em 1em 0.5em;
+	font-family: 'PhosphateSolid';
+	text-transform: uppercase;
+}
+
+/* individualmessage formating */
 .yourmsg {
 
 }
@@ -11,4 +19,12 @@
 } 
 .system{
 
+}
+
+.messageboard p {
+	background-color: aquamarine;
+}
+
+.entermsg{
+margin-bottom: 0;
 }

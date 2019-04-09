@@ -13,7 +13,7 @@ import Chatboard from "./Chatboard.js"
 const Gamepage = () => (
 
 	<div>
-		<nav> hi I'm the gamepage </nav>
+		<nav> SHIPWARS </nav>
 		<div className="board-with-panel">
 			<div className="left-panel">
 				<YourHeader></YourHeader>
@@ -21,7 +21,6 @@ const Gamepage = () => (
 				<YourShipSelector></YourShipSelector>
 			</div> 
 			<div className="middle-panel">
-				<p> this is the chatbot section</p>
 				<Chatboard></Chatboard>
 			</div>
 			<div className="right-panel">
