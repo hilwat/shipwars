@@ -4,6 +4,7 @@
 	width: 1.6rem;
 	border-radius: 5px;
 	color: #B0BEC5;
+	font-family: 'Roboto', sans-serif;
 }
 .board-normal{
 	margin: 1px;
@@ -11,12 +12,10 @@
 
 .board-head-top{
 	margin: 8px 0.8px 0px 0.8px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .board-head-left{
 	margin: 0px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .board-unselected {

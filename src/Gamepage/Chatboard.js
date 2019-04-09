@@ -3,8 +3,10 @@ import './Chatmessage.css';
 
 const Chatboard = () => 
 	<div className="containermsg">
-		<div className="headermsg">
-			<a>*Chat Here*</a>
+	<div className="headerbox">
+			<div className="headermsg-middle">
+				<a>*Chat Here*</a>
+			</div>
 		</div>
 		<div className="messageboard">
 			<p className="yourmsg"> message 1</p>

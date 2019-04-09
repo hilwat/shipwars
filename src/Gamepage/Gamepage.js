@@ -13,7 +13,7 @@ import Chatboard from "./Chatboard.js"
 const Gamepage = () => (
 
 	<div>
-		<nav> SHIPWARS </nav>
+		<nav className="game-board-nav"><a>SHIPWARS</a><a>?</a></nav>
 		<div className="board-with-panel">
 			<div className="left-panel">
 				<YourHeader></YourHeader>
