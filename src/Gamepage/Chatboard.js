@@ -16,7 +16,7 @@ const Chatboard = () =>
 		<div className="enterbox">
 		<input className="entrymsg" placeholder="Enter message">
 		</input>
-		<button className="btnsendmessage"><img className="imgsendmessage" src="../../Images/shipwar-white-sendarrow.png"  alt="send message button"></img></button>
+		<button className="btnsendmessage"></button>
 		</div>
 	</div>
 export default Chatboard;
