@@ -9,12 +9,14 @@ const Chatboard = () =>
 				</div>
 		</div>
 		<div className="messageboard">
-			<p className="yourmsg"> message 1</p>
-			<p className="oppmsg"> message 2</p>
-			<p className="system"> message 3</p>
+			<p className="yourmsg"> 4:00 message 1</p>
+			<p className="oppmsg"> 5:00 message 2</p>
+			<p className="system"> 6:00 message 3</p>
 		</div> 
-		<div className="entermsg">
-			Enter message
+		<div className="enterbox">
+		<input className="entrymsg" placeholder="Enter message">
+		</input>
+		<button className="btnsendmessage"><img className="imgsendmessage" src="../../Images/shipwar-white-sendarrow.png"  alt="send message button"></img></button>
 		</div>
 	</div>
 export default Chatboard;
