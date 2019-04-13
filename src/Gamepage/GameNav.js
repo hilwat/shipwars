@@ -3,12 +3,12 @@ import './GameNav.css';
 
 const GameNav = () => (
 	<nav className="game-board-nav">
-	  <div className="game-logo">
-		<a>SHIPWARS</a>
-		</div> 
+	  <a href="#default" className="game-logo">SHIPWARS</a>
 		<div className="nav-selector">
-			<a><button className="btn-nav"></button></a>
-			<a><button className="btn-nav questions">?</button></a>
+			<button className="questionbtn"></button>
+			<button className="chatbtn"></button>
+			<button className="volumebtn"></button>
+			<button className="pausebtn"></button>
 		</div>
 	</nav>
 ) 

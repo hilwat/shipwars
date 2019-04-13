@@ -8,28 +8,103 @@
 	color: #ffffff;
 	background: #2979FF;
 	box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.20);
-	padding: 1em 0.5em 0.5em;
+	/* padding: 0.5em 0.5em 0.5em; */
 	overflow:hidden;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .game-logo{
 	font-family: 'PhosphateInline';
-	font-size: 30px;
-	float:left
-}
-.nav-selector{
-	float: right;
-	padding-top: 0;
-	margin-top:0;
+	color: #FFFFFF;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	align-items: center;
+	font-size: 40px;
+	margin-top: 0.6em;
 }
 
-.btn-nav{
-	background: url("../Images/nav-chat-on.png");
-	background-size: 60%;
+.pausebtn{
+	display:flex;
+	float:right;
+	background: url("../Images/nav-pause.png");
+	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 4em;
 	height: 4em;
-	border: 0;
+	border: none;
+	align-items: center;
+	margin-right: 0.4em;
+	outline:0;
+}
+.pausebtn:active{
+	border:none;
+	outline:0;
+}
+
+
+.volumebtn{
+	display:flex;
+	float:right;
+	background: url("../Images/nav-volume-on.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 4em;
+	height: 4em;
+	border: none;
+	align-items: center;
+	margin-right: 0.4em;
+	outline:0;
+}
+.volumebtn:active{
+	border:none;
+	outline:0;
+}
+
+
+.chatbtn{
+	display:flex;
+	float:right;
+	background: url("../Images/nav-chat-on.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 4em;
+	height: 4em;
+	border: none;
+	align-items: center;
+	margin-right: 0.4em;
+	outline:0;
+}
+
+.chatbtn:active{
+	border:none;
+	outline:0;
+}
+
+
+.questionbtn{
+	display:flex;
+	float:right;
+	background: url("../Images/nav-question.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 4em;
+	height: 4em;
+	border: none;
+	align-items: center;
+	margin-right: 2em;
+	outline:0;
+}
+.questionbtn:active{
+	border:none;
+	outline:0;
+	box-shadow: inset 0 -5px 0 0 rgba(0,0,0,0.20);
 }
 
 /* .chat-on{
@@ -48,7 +123,7 @@
 	background: url("../Images/nav-play.png"), rgba(41,121,255);
 }
 
-.questions{
+.questions
 	background: url("../Images/nav-questions.png"), rgba(41,121,255);
-} */
+}*/
 

@@ -8,12 +8,13 @@ import './Gamepage.css';
 import OppBoard from "./OppBoard.js";
 import OppHeader from "./OppHeader.js"
 import Chatboard from "./Chatboard.js"
+import GameNav from "./GameNav.js"
 
 
 const Gamepage = () => (
 
 	<div>
-		<nav className="game-board-nav"><a>SHIPWARS</a><a>?</a></nav>
+		<GameNav></GameNav>
 		<div className="board-with-panel">
 			<div className="left-panel">
 				<YourHeader></YourHeader>
