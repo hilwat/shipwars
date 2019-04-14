@@ -9,7 +9,7 @@ import Carrier from '../Images/Img-Carrier-Ship.png';
 const YourShipSelector = () => 
 	<div>
 		<div className="ship-selector">
-			<h2 className="ship-overview"> Place the ships</h2>
+			<h2 className="ship-overview">Re-Position: select the ship below then the tiles to place it on </h2>
 			<div className="selector-column">
 				<div className="selector-row">
 					<div className="selector-square"><img src={Destroyer} alt="blue destroyer" className="shipimg"></img>Destroyer (2 tiles)</div>
