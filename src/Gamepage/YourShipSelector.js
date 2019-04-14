@@ -4,7 +4,65 @@ import './YourShipSelector.css';
 const YourShipSelector = () => 
 	<div>
 		<div className="ship-selector">
-		<p className="ship-overview"> hi I'm the ShipSelector</p>
-		</div>
-	</div> 
+			<h2 className="ship-overview"> Place the ships</h2>
+			<div className="selector-column">
+				<div className="selector-row">
+					<div className="selector-square">Destroyer (2 tiles)</div>
+					<div className="selector-square">Submarine (3 tiles)</div>
+				</div>
+			</div>
+			<div className="selector-column">
+				<div className="selector-row">
+					<div className="selector-square">Cruiser (3 tiles)</div>
+					<div className="selector-square">Battleship (4 tiles)</div>
+			</div>
+			</div>
+			<div className="selector-column"></div>
+				<div className="selector-row">
+					<div className="selector-square">Carrier (5 tiles)</div>
+				</div>
+			</div>
+	</div>	
 export default YourShipSelector;
+
+// XXXXXXX
+
+// const ColumnHeader = () => {
+// 	const headerArray = Array(4)
+// 	headerArray.fill(1)
+// 	const something = headerArray.map((thing , index) => 
+// 		index > 0  ? <div className="board-square board-head-top">{index}</div> : 
+// 		<div className="board-square board-head-top"></div>
+// 	)
+// 	return <div className="board-row">{something}</div>
+// }
+
+// function GridColumns(props) {
+//   const rows = props.rows
+//   const columns = rows.map((row, rowNumber) => 
+// 	<div className="board-row"><div className="board-square board-head-left">{numberToLetterSpecial(rowNumber)}</div><GridRow grids={rows} rowNumber={rowNumber + 1}/></div>
+// 	)
+//   return columns
+// }
+
+// function Grid(props) {
+// 	const columnNumber = props.columnNumber 
+// 	const rowLetter = props.rowLetter
+// 	const onClick = () => console.log(columnNumber, rowLetter) 
+// 	return <div className="board-square board-unselected board-normal" onClick={onClick}></div>
+// }
+
+// function GridRow(props) {
+//   const grids = props.grids
+// 	const rowNumber = props.rowNumber
+// 	const rowLetter = numberToLetter(rowNumber)
+// 	const gridItems = grids.map((grid, columnNumber) => 
+// 		<Grid columnNumber={columnNumber +1} rowLetter={rowLetter}/>
+//   )
+//   return <div className="board-row">{gridItems}</div>
+// }
+// function YourBoard(){
+//   const rowArray = Array(10)
+//   const gridArray = Array(10).fill(rowArray)
+//   return <div className="board"> <ColumnHeader/> <GridColumns style={{width: "20px"}} rows={gridArray}/></div>
+// }

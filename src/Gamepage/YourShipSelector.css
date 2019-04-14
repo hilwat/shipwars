@@ -4,4 +4,28 @@
 
 .ship-selector{
 	height: 200px;
+	padding: 10px;
+}
+
+.selector-square {
+	height: 3rem;
+	width: 20rem;
+	font-size:13px;
+	border-radius: 5px;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(221, 156, 156);
+	margin:2px;
+	padding:2px;
+}
+
+.selector-row {
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+}
+.selector-column {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
 }
