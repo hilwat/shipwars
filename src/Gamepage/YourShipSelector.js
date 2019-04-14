@@ -1,5 +1,10 @@
 import React from "react";
 import './YourShipSelector.css';
+import Destroyer from '../Images/Img-Destroyer-Ship.png';
+import Submarine from '../Images/Img-Submarine-Ship.png';
+import Cruiser from '../Images/Img-Cruiser-Ship.png';
+import Battleship from '../Images/Img-Battleship-Ship.png';
+import Carrier from '../Images/Img-Carrier-Ship.png';
 
 const YourShipSelector = () => 
 	<div>
@@ -7,19 +12,19 @@ const YourShipSelector = () =>
 			<h2 className="ship-overview"> Place the ships</h2>
 			<div className="selector-column">
 				<div className="selector-row">
-					<div className="selector-square">Destroyer (2 tiles)</div>
-					<div className="selector-square">Submarine (3 tiles)</div>
+					<div className="selector-square"><img src={Destroyer} alt="blue destroyer" className="shipimg"></img>Destroyer (2 tiles)</div>
+					<div className="selector-square"><img src={Submarine} alt="blue submarine" className="shipimg"></img>Submarine (3 tiles)</div>
 				</div>
 			</div>
 			<div className="selector-column">
 				<div className="selector-row">
-					<div className="selector-square">Cruiser (3 tiles)</div>
-					<div className="selector-square">Battleship (4 tiles)</div>
+					<div className="selector-square"><img src={Cruiser} alt="blue submarine" className="shipimg"></img>Cruiser (3 tiles)</div>
+					<div className="selector-square"><img src={Battleship} alt="blue submarine" className="shipimg"></img>Battleship (4 tiles)</div>
 			</div>
 			</div>
 			<div className="selector-column"></div>
 				<div className="selector-row">
-					<div className="selector-square">Carrier (5 tiles)</div>
+					<div className="selector-square"><img src={Carrier} alt="blue carrier" className="shipimg"></img>Carrier (5 tiles)</div>
 				</div>
 			</div>
 	</div>	

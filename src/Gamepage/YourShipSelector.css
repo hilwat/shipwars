@@ -22,10 +22,16 @@
 .selector-row {
 	display: flex;
 	flex-direction: row;
-	width: 300px;
+	width: 325px;
 }
 .selector-column {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
+	width: 325px;
+}
+.shipimg{
+	max-width:50%;
+	max-height:50%;
+	margin: 0.4em;
+	display: block;
 }
