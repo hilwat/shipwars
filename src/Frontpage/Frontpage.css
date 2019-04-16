@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'PhosphateInline';
+  src: url(../Font/PhosphateInline.ttf);
+}
+
+@font-face {
+  font-family: 'PhosphateSolid';
+  src: url(../Font/PhosphateSolid.ttf);
+}
+
+.board-with-panel{
+	display: flex;
+	height: 100%;
+	bottom: 0;
+}
+
+.left-panel{
+	flex:1;
+	background: #F5F5F5;
+	align-content: center;
+	box-shadow:inset 0px -4px 0 0 rgb(221, 222, 225);
+	bottom: 0; 
+	align-content:center;
+}
+.extended-right-panel{
+	flex:2;
+	box-shadow:inset 0px -4px 0 0 rgb(221, 222, 225);
+	bottom: 0;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
