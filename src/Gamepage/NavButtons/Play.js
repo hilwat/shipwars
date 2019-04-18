@@ -3,10 +3,10 @@ import './NavButtons.css';
 
 const Play = ({onPlayerClick}) => {
   return (
-<svg className="navmenubtn"  width="366px" height="404px" viewBox="0 0 366 404" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" onClick={onPlayerClick}>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-Copy-6" transform="translate(-119.000000, -59.000000)" fill="#FFFFFF">
-            <path d="M184.358431,351.86377 L184.354507,175.969372 L344.073863,265.460028 L340.441893,267.119015 L184.358431,351.86377 Z M176.672669,362.354886 L176.358527,363.608176 L356.358527,267.89161 L355.14519,267.260145 L361.358527,265.72405 L352.49778,260.856747 L176.358527,162.608176 L176.358527,362.608176 L176.672669,362.354886 Z M120.556641,59.90625 L485,261.565281 L119.976563,462.652344 L120.556641,59.90625 Z" id="Combined-Shape"></path>
+<svg className="navmenubtn" width="365px" height="366px" viewBox="0 0 365 366" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" onClick={onPlayerClick}>
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <g id="Artboard-Copy-6" transform="translate(-120.000000, -97.000000)" fill="#FFFFFF">
+            <path d="M183.99988,361.236602 L183.996027,204.097432 L343.053191,282.888699 L340.083366,285.194864 L183.99988,361.236602 Z M175.030615,371.980033 L174.84375,377.335938 L363.626622,283.503054 L364.141602,283.413086 L174.708984,185.625 L175,191.424213 L175,372 L175.030615,371.980033 Z M120.580041,97 L485,280.259891 L120,463 L120.580041,97 Z" id="Combined-Shape"></path>
         </g>
     </g>
 </svg>
