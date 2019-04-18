@@ -1,0 +1,13 @@
+.menubtn{
+	display:flex;
+	float:right;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 4em;
+	height: 4em;
+	border: none;
+	align-items: center;
+	margin-right: 0.4em;
+	outline:0;
+}

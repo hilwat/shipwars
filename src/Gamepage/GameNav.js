@@ -1,5 +1,9 @@
 import React from "react";
 import './GameNav.css';
+import PausePlay from "./MenuButtons/PausePlay.js"
+
+	
+// }
 
 const GameNav = () => (
 	<nav className="game-board-nav">
@@ -9,6 +13,7 @@ const GameNav = () => (
 			<button className="chatbtn"></button>
 			<button className="volumebtn"></button>
 			<button className="pausebtn"></button>
+			<PausePlay></PausePlay>
 		</div>
 	</nav>
 ) 
