@@ -4,6 +4,7 @@ import PausePlay from "./NavButtons/PausePlay.js"
 import SoundSilence from "./NavButtons/SoundSilence.js"
 import ChatMute from "./NavButtons/ChatMute.js";
 import Question from "./NavButtons/Question.js";
+import QuestionDropdown from "./NavButtons/QuestionDropdown";
 	
 // }
 
@@ -14,7 +15,7 @@ const GameNav = () => (
 			<PausePlay></PausePlay>
 			<ChatMute></ChatMute>
 			<SoundSilence></SoundSilence>
-			<Question></Question>
+			<QuestionDropdown></QuestionDropdown>
 		</div>
 	</nav>
 ) 
