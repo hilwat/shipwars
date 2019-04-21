@@ -22,7 +22,7 @@ class QuestionDropdown extends Component {
 		render() {
 			return (
 				<div className="dropdown">
-					{this.state.dropdown? <Question onQuestionClick={this.handleDropdownClick} /> : <div><DropDown/><Question onQuestionClick={this.handleDropdownClick} /></div>}
+					{this.state.dropdown? <div><DropDown/><Question onQuestionClick={this.handleDropdownClick} /></div> : <Question onQuestionClick={this.handleDropdownClick} />}
 				</div>
 			)
 		}

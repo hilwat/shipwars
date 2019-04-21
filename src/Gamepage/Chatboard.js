@@ -9,10 +9,12 @@ const Chatboard = () =>
 					<a>Chat Board</a>
 				</div>
 			</div>
-			<div className="messageboard">
-			<p className="yourmsg"> 4:00 message 1</p>
-			<p className="oppmsg"> 5:00 message 2</p>
-			<p className="system"> 6:00 message 3</p>
+			<div id="chat-box" className="messageboard clearfix" >
+				<ul class="messages clearfix">
+					<li className="yourmsg"> 4:00 message 1</li>
+					<li className="oppmsg"> 5:00 message 2</li>
+					<li className="system"> 6:00 message 3</li>
+				</ul>
 			<div className="enterbox">
 				<input className="entrymsg" placeholder="Enter message">
 				</input>

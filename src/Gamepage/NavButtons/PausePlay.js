@@ -22,7 +22,7 @@ class PausePlay extends Component {
 		render() {
 			return (
 				<div className="player" >
-					{this.state.playing? <Pause onPlayerClick={this.handlePlayerClick} /> : <Play onPlayerClick={this.handlePlayerClick} />}
+					{this.state.playing? <Play onPlayerClick={this.handlePlayerClick} /> : <Pause onPlayerClick={this.handlePlayerClick} />}
 				</div>
 			)
 		}
