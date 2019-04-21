@@ -20,8 +20,8 @@ const Gamepage = () => (
 		<div className="board-with-panel">
 			<div className="left-panel">
 				<YourHeader></YourHeader>
-				<ShipLock></ShipLock>
 				<YourBoard></YourBoard>
+				<ShipLock></ShipLock>
 				<YourShipSelector></YourShipSelector>
 			</div> 
 			<div className="middle-panel">
