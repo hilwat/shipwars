@@ -145,11 +145,12 @@ ul.messages li {
 	color: #000000 ;
 	margin-bottom: 15px;
 	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
 }
 
 ul.messages li:after, ul.messages li:before {
 	right: 100%;
-	top: 40%;
+	top: 39%;
 	border: solid transparent;
 	content: " ";
 	height: 0;
@@ -162,28 +163,44 @@ ul.messages li:after {
 	border-color: rgba(166, 172, 186, 0);
 	border-right-color: #E3E3E3;;
 	border-width: 10px;
-	margin-top: -5px;
+	margin-top: -6px;
 }
 ul.messages li:before {
 	border-color: rgba(0, 0, 0, 0);
 	border-right-color: transparent;
 	border-width: 26px;
-	margin-top: -26px;
+	margin-top: -28px;
 }
 
-ul.messages li:nth-child(2n) {
+ul.messages .oppmsg {
 	background: #2878ff;
 	float: right;
 }
 
-ul.messages li:nth-child(2n):after, ul.messages li:nth-child(2n):before {
+ul.messages .system {
+	background: none;
+	color: #FF5C42;
+	font-weight: 600;
+}
+
+ul.messages .system:after {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+ul.messages .oppmsg:after, ul.messages li:nth-child(2n):before {
 	border-right-color: transparent;
 	left: 100%;
 }
 
-ul.messages li:nth-child(2n):after {
+ul.messages .oppmsg:after {
 	border-left-color: #2878ff;
 }
-ul.messages li:nth-child(2n):before {
+
+ul.messages .system:after {
+	border-left-color: transparent;
+}
+
+ul.messages .oppmsg:before {
 	border-left-color: transparent;
 } 

@@ -10,7 +10,7 @@ const Chatboard = () =>
 				</div>
 			</div>
 			<div id="chat-box" className="messageboard clearfix" >
-				<ul class="messages clearfix">
+				<ul className="messages clearfix">
 					<li className="yourmsg"> 4:00 message 1</li>
 					<li className="oppmsg"> 5:00 message 2</li>
 					<li className="system"> 6:00 message 3</li>

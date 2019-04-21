@@ -1,9 +1,10 @@
 .ship-overview{
-	font-family: roboto;
+	font-family: 'Roboto', sans-serif;
+	font-size:13px;
 }
 
 .ship-selector{
-	height: 200px;
+	height: 300px;
 	padding: 10px;
 }
 

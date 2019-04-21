@@ -9,6 +9,8 @@ import OppBoard from "./OppBoard.js";
 import OppHeader from "./OppHeader.js"
 import Chatboard from "./Chatboard.js"
 import GameNav from "./GameNav.js"
+import ShipLock from "./ShipSelectorLock.js"
+
 
 
 const Gamepage = () => (
@@ -18,6 +20,7 @@ const Gamepage = () => (
 		<div className="board-with-panel">
 			<div className="left-panel">
 				<YourHeader></YourHeader>
+				<ShipLock></ShipLock>
 				<YourBoard></YourBoard>
 				<YourShipSelector></YourShipSelector>
 			</div> 
