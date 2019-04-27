@@ -1,8 +1,9 @@
 import React from 'react';
+import './svgfront.css';
 
 const ShipLogo = () => {
   return (
-<svg width="303px" height="220px" viewBox="0 0 303 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+<svg className="shiplogo" width="250px" height="220px" viewBox="0 0 303 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="Landing-page-Copy-3" transform="translate(-70.000000, -147.000000)" fillRule="nonzero">
             <g id="Group" transform="translate(70.000000, 147.000000)">

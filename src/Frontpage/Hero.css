@@ -1,6 +1,5 @@
 .hero-img {
-	width: 50%;
-	height: 50%;
-	float: right;
+	max-inline-size: 100%;
+	float: left;
 	float: top;
 }
