@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Frontmenu from "./Frontmenu.js"
 import Hero from "./Hero.js"
@@ -12,11 +13,9 @@ const Frontpage = () => (
 		<div className="board-with-panel">
 			<div className="left-panel">
 			 <Frontmenu></Frontmenu>
-			<h2>Frontmenu</h2>
 			</div> 
 			<div className="extended-right-panel">
 				<Hero></Hero>
-				<h2>HeroImg</h2>
 			</div>
 		</div>
 	<div>

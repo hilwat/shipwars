@@ -182,6 +182,7 @@ ul.messages .system {
 	background: none;
 	color: #FF5C42;
 	font-weight: 600;
+	text-align: center;
 }
 
 ul.messages .system:after {

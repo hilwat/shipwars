@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
+import Frontpage from './Frontpage/Frontpage.js';
 
-import Gamepage from './Gamepage/Gamepage.js';
 
 class App extends Component {
   render() {
@@ -10,7 +11,7 @@ class App extends Component {
 				<div className="App">
 				</div>
 				<div>
-					<Gamepage></Gamepage>
+					<Frontpage></Frontpage>
 				</div>
 			</div>
     );

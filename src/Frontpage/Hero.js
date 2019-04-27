@@ -1,6 +1,6 @@
 import React from "react";
 
-import './hero.css';
+import './Hero.css';
 import Heroimg from '../Images/battleship_colortest2.jpg';
 
 

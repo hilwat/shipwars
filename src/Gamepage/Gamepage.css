@@ -31,6 +31,17 @@
 	height: 100%;
 	bottom: 0;
 }
+.main-container {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+.fixer-container {
+	float: left;
+	position: relative;
+	left: -50%;
+}
+
 
 .left-panel{
 	flex:1;
