@@ -40,9 +40,6 @@ const Gamepage = () => (
 				</div>
 			</div>
 		</div>
-	<div>
-	<Footer></Footer>
-	</div>
 	</div>
 )
 export default Gamepage;

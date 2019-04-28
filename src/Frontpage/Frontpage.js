@@ -18,9 +18,6 @@ const Frontpage = () => (
 				<Hero></Hero>
 			</div>
 		</div>
-	<div>
-	<Footer></Footer>
-	</div>
 	</div>
 )
 export default Frontpage;

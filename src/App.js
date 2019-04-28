@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Frontpage from './Frontpage/Frontpage.js';
-
+import Gamepage from './Gamepage/Gamepage.js';
+import Footer from "./Gamepage/Footer.js"
 
 class App extends Component {
   render() {
@@ -10,7 +10,10 @@ class App extends Component {
 				<div className="App">
 				</div>
 				<div>
-					<Frontpage></Frontpage>
+					<Gamepage></Gamepage>
+				</div>
+				<div>
+				<Footer></Footer>
 				</div>
 			</div>
     );
