@@ -20,17 +20,17 @@ function Frontmenu() {
 					<ShipLogo></ShipLogo>
 					<ul>
 						<button className="mainbtnfront">
-							<Link to="/Gamepage">Play</Link>
+							<Link to="/Gamepage"/>Play
 						</button>
 						<button className="otherbtnfront">Stats</button>
-						<li className="otherbtnfront"> 
-							<Link>Options</Link>
-						</li>
-						<li className="otherbtnfront"> 
-							<Link>Help</Link>
-						</li>
+						<button className="otherbtnfront"> 
+							<Link/>Options
+						</button>
+						<button className="otherbtnfront"> 
+							<Link/>Help
+						</button>
 					</ul>
-					</div>
+				</div>
 			</div>
 		<Switch>
 			<Route path="/Gamepage/" component={GamePage} />
