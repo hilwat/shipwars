@@ -1,0 +1,19 @@
+.board-with-panel{
+	display: flex;
+	height: 100%;
+	bottom: 0;
+}
+.main-container {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+.fixer-container {
+	float: left;
+	position: relative;
+	left: -50%;
+}
+
+@media only screen and (max-width: 400px) {
+	.left-panel { width: 100% }
+	}

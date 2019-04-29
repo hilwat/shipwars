@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import Frontpage from './Frontpage/Frontpage.js';
 import Gamepage from './Gamepage/Gamepage.js';
 import Footer from "./Gamepage/Footer.js"
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 
 class App extends Component {
   render() {
@@ -10,7 +13,12 @@ class App extends Component {
 				<div className="App">
 				</div>
 				<div>
-					<Gamepage></Gamepage>
+					<Router>
+						<Switch>
+							<Route path="/" component={Frontpage} />
+							<Route path="/Gamepage" component={Gamepage} />
+					 </Switch>
+					</Router>
 				</div>
 				<div>
 				<Footer></Footer>

@@ -3,6 +3,12 @@
   src: url(../Font/PhosphateSolid.ttf);
 }
 
+.board-with-panel{
+	display: flex;
+	height: 100%;
+	bottom: 0;
+}
+
 .main-container {
 	float: left;
 	position: relative;
