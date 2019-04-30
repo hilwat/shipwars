@@ -18,6 +18,7 @@ const GameType = () => (
 		<div className="main-container">
 			 <div className="fixer-container">
 				<SmallLogo></SmallLogo>
+				<h1>PLAY AGAINST:</h1> 
 				<Link to='/overview'>		
 					<FriendSVG></FriendSVG>
 				</Link>

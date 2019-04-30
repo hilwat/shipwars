@@ -3,7 +3,7 @@ import './ShipSVG.css';
 
 const SubmarineSVG= () => {
   return (
-		<svg width="142" height="71" viewBox="0 0 142 71" xmlns="http://www.w3.org/2000/svg"
+		<svg className="ship-type" width="142" height="71" viewBox="0 0 142 71" xmlns="http://www.w3.org/2000/svg"
 		xmlnsXlink="http://www.w3.org/1999/xlink">
 				<defs>
 						<polygon id="path-1" points="0.0167053364 0.260093023 119.972715 0.260093023 119.972715 35.9531941 0.0167053364 35.9531941"

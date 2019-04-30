@@ -3,7 +3,7 @@ import './ShipSVG.css';
 
 const CarrierSVG= () => {
   return (
-<svg width="271" height="66" viewBox="0 0 271 66" xmlns="http://www.w3.org/2000/svg">
+<svg className="ship-carrier" width="271" height="66" viewBox="0 0 271 66" xmlns="http://www.w3.org/2000/svg">
     <g id="Page-1" fill="none" fillRule="evenodd">
         <g id="Home-Copy-2" transform="translate(-36 -425)" fillRule="nonzero">
             <g id="Carrier---Ship" transform="translate(36 425)">

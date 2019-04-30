@@ -1,0 +1,27 @@
+.ship-type{
+	width: 68%;
+}
+
+.ship-battleship{
+	width: 90%;
+}
+
+.ship-type-2{
+	width: 90%;
+}
+
+.ship-destroyer{
+	width: 50%;
+}
+
+.ship-carrier{
+	width: 100%;
+}
+
+.dividing{
+	width: 70%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+

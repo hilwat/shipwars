@@ -1,9 +1,11 @@
 
 import React from 'react';
+import './TypeSVG.css';
+
 
 const RandomSVG= () => {
   return (
-	<svg width="250px" height="170px" viewBox="0 0 329 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+	<svg className="type-svg" width="250px" height="170px" viewBox="0 0 329 282" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
     <defs>
         <circle id="path-1" cx="116" cy="116" r="116"></circle>
         <rect id="path-3" x="0" y="202" width="329" height="80"></rect>

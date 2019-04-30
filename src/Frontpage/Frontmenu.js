@@ -13,7 +13,7 @@ function Frontmenu() {
 				<div className="fixer-container">
 					<LogoName></LogoName>
 					<ShipLogo></ShipLogo>
-					<ul>
+					<ul className="button-list">
 						<Link to='/gametype'>
 						<button className="mainbtnfront">Play</button>
 						</Link>

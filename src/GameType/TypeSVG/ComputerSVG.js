@@ -1,9 +1,10 @@
 
 import React from 'react';
+import './TypeSVG.css';
 
 const ComputerSVG= () => {
   return (
-<svg width="250px" height="170px" viewBox="0 0 329 275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+<svg className="type-svg" width="250px" height="170px" viewBox="0 0 329 275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
             <stop stopColor="#4C115B" offset="0%"></stop>
