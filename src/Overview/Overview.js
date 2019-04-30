@@ -6,7 +6,9 @@ import CarrierSVG from "./ShipSVG/CarrierSVG.js";
 import CruiserSVG from "./ShipSVG/CruiserSVG.js";
 import DestroyerSVG from "./ShipSVG/DestroyerSVG.js";
 import SubmarineSVG from "./ShipSVG/SubmarineSVG.js";
-import DividingSVG from "./ShipSVG/DividingSVG.js"
+import DividingSVG from "./ShipSVG/DividingSVG.js";
+
+import FriendCode from "../FriendCode/FriendCode.js";
 
 import SmallLogo from "./ShipSVG/SmallLogo.js";
 
@@ -17,6 +19,7 @@ const Overview = () => (
 
 	<div>
 		<SmallLogo></SmallLogo>
+		<FriendCode/>
 		<h1>YOUR MATCHED!</h1>
 		<h1>RULES:</h1>
 		<DividingSVG/>
