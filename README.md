@@ -1,5 +1,36 @@
 TO DO 
+Overall/First Page
 - font: phosphate see if it will run if not remove Font folder and @font-face in app.css
+- clean up fonts in app.js file 
+- Canvas and video light/dark upon hover and click 
+- Should the ship in logo be animated on the menu panel 
+- Should the favicon be animated (gif)
+- Footer what should it look like? - link to github 
+- bouy button top right or question mark? to change language? -> use i18 to do this?
+
+Second page gametype
+- Should change the backgrounds on the types
+- Stranger pirate silohette instead
+- SVG should move upon hover over change - try svgator? Also make the button darker like first page 
+
+Third page 
+- light grey still there no matter what I do
+- Need to do dynamic code in code that ID to be game link 
+- Social share need to happen - so find how to do the links? trigger popups 
+- Your matched dynamic? Should there be a waiting screen depending on gametype?
+- make it scrollable the menu section? fixed width and height maximum??
+
+Game Screen
+- make the menu buttons reflect action - e.g. pause, hide and show chat? 
+- start to introduce game logic
+
+More screens or popup? 
+- Win 
+- Lose Screen 
+- Person left not responding 
+- 404 Error screen
+- trying to join when already going (e.g. game already in process if you were just playing try closing another tab)
+
 
 ## Available Scripts
 

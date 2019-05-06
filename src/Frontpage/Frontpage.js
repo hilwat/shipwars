@@ -3,6 +3,7 @@ import React from "react";
 
 import Frontmenu from "./Frontmenu.js"
 import Hero from "./Hero.js"
+import DarkVideo from "../Images/battleship-dark.mp4"
 import './Frontpage.css';
 import { Switch, Route, Link } from 'react-router-dom';
 import Overview from "../Overview/Overview.js";
@@ -23,7 +24,9 @@ const Frontpage = () => (
 			 </Switch>
 			</div> 
 			<div className="extended-right-panel">
-				<Hero></Hero>
+				<video className='videoTag' autoPlay loop muted>
+					<source src={DarkVideo} type='video/mp4' />
+				</video>
 			</div>
 		</div>
 	</div>

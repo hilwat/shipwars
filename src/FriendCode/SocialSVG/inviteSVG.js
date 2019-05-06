@@ -12,14 +12,14 @@ const imessenger= () => {
 								<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.200888813 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
 						</filter>
 				</defs>
-				<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
 						<g id="Home-Copy-4" transform="translate(-74.000000, -528.000000)">
-								<rect id="Rectangle-2" stroke="#2979FF" strokewidth="6" fillRule="nonzero" x="77" y="531" width="494" height="74"></rect>
+								<rect id="Rectangle-2" stroke="#2979FF" strokeWidth="6" fillRule="nonzero" x="77" y="531" width="494" height="74"></rect>
 								<g id="Rectangle-1">
-										<use fill="#2979FF" fill-rule="evenodd" xlinkHref="#path-1"/>
-										<use fill="black" fill-opacity="1" filter="url(#filter-2)" xlinkHref="#path-1"/>
+										<use fill="#2979FF" fillRule="evenodd" xlinkHref="#path-1"/>
+										<use fill="black" fillOpacity="1" filter="url(#filter-2)" xlinkHref="#path-1"/>
 								</g>
-								<text id="COPY" font-family="Phosphate-Solid, Phosphate" font-size="40" fontWeight="normal" fill="#FFFFFF">
+								<text id="COPY" fontFamily="Phosphate-Solid, Phosphate" fontSize="40" fontWeight="normal" fill="#FFFFFF">
 										<tspan x="454.7" y="580">COPY</tspan>
 								</text>
 								<text id="Shipwars.io/3215F" fontFamily="Roboto-Regular, Roboto" fontSize="38" fontWeight="normal" fill="#4A4A4A">

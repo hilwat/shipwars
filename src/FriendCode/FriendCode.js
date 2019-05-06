@@ -13,11 +13,15 @@ const FrontCode = () => (
 				<h1>Invite Code</h1>
 				<InviteSVG/>
 				<h1>Or Invite Via</h1>
+				<div className="main-container">
+				<div className="fixer-container">
 				<div className="social-icons">
 					<Imessenger/>
 					<Telegram/>
 					<Whatsapp/>
 					<Fbmsg/>
+				</div>
+				</div>
 				</div>
 			</div>
 	)

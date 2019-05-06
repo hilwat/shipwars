@@ -12,6 +12,7 @@
 	display: flex;
 	height: 100%;
 	bottom: 0;
+	background-color: #ffffff;
 }
 
 .left-panel{
@@ -24,6 +25,10 @@
 	display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.videoTag{
+	width:100%
 }
 
 @media only screen and (max-width: 400px) {

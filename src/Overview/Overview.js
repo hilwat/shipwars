@@ -20,8 +20,15 @@ const Overview = () => (
 	<div>
 		<SmallLogo></SmallLogo>
 		<FriendCode/>
-		<h1>YOUR MATCHED!</h1>
-		<h1>RULES:</h1>
+		<div className="main-container">
+			 <div className="fixer-container">
+			 		<div className="orientation-title">
+						<h1>YOUR MATCHED!</h1>
+						<h1>RULES:</h1>
+					</div>
+				</div>
+		</div>
+		
 		<DividingSVG/>
 		<p>You will have <strong> 2 minutes </strong> to place each of the following:</p>
 		<DividingSVG/>

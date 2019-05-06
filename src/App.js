@@ -16,7 +16,7 @@ class App extends Component {
 					<Router>
 						<Switch>
 							<Route path="/" component={Frontpage} />
-							<Route path="/gamepage" component={Gamepage} />
+							<Route exact path="/gamepage" component={Gamepage} />
 					 </Switch>
 					</Router>
 				</div>
