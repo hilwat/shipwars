@@ -23,6 +23,7 @@ Third page
 Game Screen
 - make the menu buttons reflect action - e.g. pause, hide and show chat? 
 - start to introduce game logic
+- Countdown clocks and timing
 
 More screens or popup? 
 - Win 
@@ -31,6 +32,12 @@ More screens or popup?
 - 404 Error screen
 - trying to join when already going (e.g. game already in process if you were just playing try closing another tab)
 
+Mobile 
+- Check first screens are right 
+- How to collapse gamescreen and then toggle between other player and current 
+
+Check cross browser compatilability 
+- Firefox -> see how it appears 
 
 ## Available Scripts
 

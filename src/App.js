@@ -7,18 +7,24 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 
 class App extends Component {
+	state = {
+		display: 1
+	}
+
+	startGame = () => this.setState({display:2})
+	loseGame = () => this.setState({display:3})
+	winGame = () => this.setState({display:4})
+	leftGame = () => this.setState({display:5})
+	fullGame = () => this.setState({display:6})
+
   render() {
     return (
 			<div>
 				<div className="App">
 				</div>
 				<div>
-					<Router>
-						<Switch>
-							<Route path="/" component={Frontpage} />
-							<Route exact path="/gamepage" component={Gamepage} />
-					 </Switch>
-					</Router>
+						{this.state.display===1 && <Frontpage startGame= {this.startGame}/>}
+						{this.state.display===2 && <Gamepage loseGame = {this.loseGame} winGame = {this.winGame} leftGame = {this.leftGame} fullGame = {this.fullGame}/>}
 				</div>
 				<div>
 				<Footer></Footer>

@@ -7,11 +7,10 @@ import ComputerSVG from "./TypeSVG/ComputerSVG.js";
 
 import SmallLogo from "../Overview/ShipSVG/SmallLogo.js";
 
-import {Link} from 'react-router-dom';
 
 
 
-const GameType = () => (
+const GameType = (props) => (
 
 	<div>
 		<div className="board-with-panel">
@@ -19,15 +18,15 @@ const GameType = () => (
 			 <div className="fixer-container">
 				<SmallLogo></SmallLogo>
 				<h1>PLAY AGAINST:</h1> 
-				<Link to='/overview'>		
-					<FriendSVG></FriendSVG>
-				</Link>
-				<Link to='/overview'>		
+				<div onClick={props.friendClick}>
+				  <FriendSVG/>
+				</div>
+				<div onClick={props.nonfriendClick}>
 					<RandomSVG></RandomSVG>
-				</Link>
-				<Link to='/overview'>		
+				</div>
+				<div onClick={props.nonfriendClick}>
 					<ComputerSVG></ComputerSVG>
-				</Link>
+				</div>
 		</div>
 		</div>
 		</div>

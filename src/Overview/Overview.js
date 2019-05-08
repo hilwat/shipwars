@@ -12,14 +12,13 @@ import FriendCode from "../FriendCode/FriendCode.js";
 
 import SmallLogo from "./ShipSVG/SmallLogo.js";
 
-import {Link} from 'react-router-dom';
 
 
-const Overview = () => (
+const Overview = (props) => (
 
 	<div>
 		<SmallLogo></SmallLogo>
-		<FriendCode/>
+		{props.showFriend===true && <FriendCode/>}
 		<div className="main-container">
 			 <div className="fixer-container">
 			 		<div className="orientation-title">
@@ -67,9 +66,7 @@ const Overview = () => (
 		 </tr>
 		</table>
 		<DividingSVG/>
-		<Link to='/gamepage'>
-		<button className="overviewbtn">Start Game</button>
-		</Link>
+		<button className="overviewbtn" onClick={props.startGame}>Start Game</button>
 		</div>
 		</div>
 	</div>

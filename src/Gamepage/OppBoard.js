@@ -36,7 +36,7 @@ function Grid(props) {
 	const columnNumber = props.columnNumber 
 	const rowLetter = props.rowLetter
 	const onClick = () => console.log(columnNumber, rowLetter) 
-	return <div className="board-square board-opp-unselected board-normal" onClick={onClick}>?</div>
+	return <div className="board-square board-opp-unselected board-normal" id="questionmarks" onClick={onClick}>?</div>
 }
 
 function GridRow(props) {
