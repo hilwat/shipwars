@@ -1,9 +1,6 @@
-import React from "react";
-import _ from 'lodash';
+import { start } from 'repl';
 
-/** outside of this a turn manager*/
-
-/** Ship Objects*/
+var _ = require('lodash');
 
 var shipDetails = [
  {type: "S1", name: "Carrier", spaces: 5},
@@ -15,13 +12,15 @@ var shipDetails = [
 
 /** Place ship appends - orientation and starting position */
 	
-function orientation() {/** true or false to determine = horizontal or vertical */
+export function orientation() {
+	// true or false to determine = horizontal or vertical 
 	var orientation = Math.random()*2 
 	return (orientation > 1 ? "horizontal" : "vertical");
-}/** randomly generate a number between 0 and 1 and round or see if number is divisable by 2*/
+}
+// randomly generate a number between 0 and 1 and round or see if number is divisable by 2*/
 
-function makeOrientation(ships){
-	shipsOrientation = []
+export function makeOrientation(ships){
+	var shipsOrientation = []
 	ships.map((ship) => { 
 		ship["orientation"] = orientation()
 		shipsOrientation.push(ship)
@@ -32,7 +31,7 @@ function makeOrientation(ships){
 
 var letters = [0,"A","B","C","D","E","F","G","H","I","J"]
 
-function startingPosition(ship, letters) {
+export function startingPosition(ship, letters) {
 	if (ship.orientation === "vertical") {
 	/** vertical restricts y by ship spaces */
 	var x = Math.ceil(Math.random()*10)
@@ -53,7 +52,7 @@ function startingPosition(ship, letters) {
 
 var usedSpaces = []
 
-function makeStartPosition(ships){
+export function makeStartPosition(ships){
 	var letters = [0,"A","B","C","D","E","F","G","H","I","J"]
 	var updatedShips = []
 	
@@ -65,7 +64,7 @@ function makeStartPosition(ships){
 	console.log(updatedShips);
 }
 
-function positionShip(ship){
+export function positionShip(ship){
 	while(true){
 		var startingPositionCord = startingPosition(ship, letters)
 		var positionArray = [startingPositionCord[0] + startingPositionCord[1]]
@@ -87,7 +86,7 @@ function positionShip(ship){
 	}
 }
 	
-function checkIntersect(positionArray, currentSpaces){
+export function checkIntersect(positionArray, currentSpaces){
 	var check = _.intersection(currentSpaces, positionArray)
 	if (Array.isArray(check) && check.length > 0) {
 		return true
@@ -98,10 +97,21 @@ function checkIntersect(positionArray, currentSpaces){
 
 }
 
-const orientationArray = makeOrientation(shipDetails)
-makeStartPosition(orientationArray)
+export function getInitialBoard(){
+	const orientationArray = makeOrientation(shipDetails)
+	return makeStartPosition(orientationArray)
+}
 
+// 00:S1 01:S1 02:S1
+//[[0,0,0m,s1],[0,0,0,s1], etc]
+export function getCoordinates(){
+	const startingArray = getInitialBoard()
+	console.log(startingArray)
+	console.log(startingArray.isArray)
+	startingArray.map((element) => console.log(element))
+	// for each ship print each coordinate onto a x by y coordinate grid
 
+}
 /** Generate initial board 
 
 Reposition ships - so I need to have a remove function that clears the spaces 

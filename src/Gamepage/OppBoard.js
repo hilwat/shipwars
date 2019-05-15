@@ -1,6 +1,7 @@
 import React from "react";
 import './GridSquare.css';
 
+
 function numberToLetterSpecial(number){
 	//without 0 in index zero
 	var letters = ["A","B","C","D","E","F","G","H","I","J"]
