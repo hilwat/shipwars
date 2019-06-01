@@ -8,8 +8,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 class App extends Component {
 	state = {
-		display: 1
+		display: 2
 	}
+
 
 	startGame = () => this.setState({display:2})
 	loseGame = () => this.setState({display:3})

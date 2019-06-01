@@ -1,4 +1,3 @@
-import { start } from 'repl';
 
 var _ = require('lodash');
 
@@ -11,7 +10,8 @@ var shipDetails = [
 ]
 
 /** Place ship appends - orientation and starting position */
-	
+getGrid()
+
 export function orientation() {
 	// true or false to determine = horizontal or vertical 
 	var orientation = Math.random()*2 
@@ -31,7 +31,7 @@ export function makeOrientation(ships){
 
 var letters = [0,"A","B","C","D","E","F","G","H","I","J"]
 
-export function startingPosition(ship, letters) {
+function startingPosition(ship, letters) {
 	if (ship.orientation === "vertical") {
 	/** vertical restricts y by ship spaces */
 	var x = Math.ceil(Math.random()*10)
@@ -52,7 +52,7 @@ export function startingPosition(ship, letters) {
 
 var usedSpaces = []
 
-export function makeStartPosition(ships){
+function makeStartPosition(ships){
 	var letters = [0,"A","B","C","D","E","F","G","H","I","J"]
 	var updatedShips = []
 	
@@ -61,10 +61,10 @@ export function makeStartPosition(ships){
 		newShip["positionArray"] = positionShip(ship);
 		updatedShips.push(newShip);
 	})
-	console.log(updatedShips);
+	return updatedShips
 }
 
-export function positionShip(ship){
+function positionShip(ship){
 	while(true){
 		var startingPositionCord = startingPosition(ship, letters)
 		var positionArray = [startingPositionCord[0] + startingPositionCord[1]]
@@ -86,7 +86,7 @@ export function positionShip(ship){
 	}
 }
 	
-export function checkIntersect(positionArray, currentSpaces){
+function checkIntersect(positionArray, currentSpaces){
 	var check = _.intersection(currentSpaces, positionArray)
 	if (Array.isArray(check) && check.length > 0) {
 		return true
@@ -97,21 +97,45 @@ export function checkIntersect(positionArray, currentSpaces){
 
 }
 
-export function getInitialBoard(){
+function getInitialBoard(){
 	const orientationArray = makeOrientation(shipDetails)
 	return makeStartPosition(orientationArray)
 }
+export function getGrid() {
+	var letters = [0,"A","B","C","D","E","F","G","H","I","J"]
+	
+		// array that is each ship, go to starting direction and printing the ship on to the grid 
+		//for loop pop each ship out and then go horizontal or vertical and if statement 
+	const shipsPositions = getInitialBoard()
+	const rowArray = Array(10)
+	const shipsMaps = Array(10).fill(rowArray)
+	console.log("ShipPosiiton", shipsPositions)
+	shipsPositions.map((ship) => {
+		
+		ship.positionArray.map((coordinates) => {
+			var y = letters.indexOf(coordinates.slice((-1)))
+			console.log("y", y)
+			var x = coordinates.slice(0,(coordinates.length -1))
+			console.log("x", x)
+		})
+		// ship.positionArray.map((coordinates) => {
+		// 	var y = letters.indexOf(coordinates.slice((-1)))
+		// 	console.log("y", y)
+		// 	var x = coordinates.slice(0,(coordinates.length -1))
+		// 	console.log("x", x)
+		// 	shipsMaps[x][y] = ship.type
+		// })
+	}) 
+	console.log(shipsMaps)
+	return shipsMaps
 
+	/// heres how tis going to work give to game board (state) and it will be used index of grid square and then it will tell if a ship is there an what kind of ship
+	// pass vector every element in that vector map remove those point
+	// for all entries in map of S1
+}
 // 00:S1 01:S1 02:S1
 //[[0,0,0m,s1],[0,0,0,s1], etc]
-export function getCoordinates(){
-	const startingArray = getInitialBoard()
-	console.log(startingArray)
-	console.log(startingArray.isArray)
-	startingArray.map((element) => console.log(element))
-	// for each ship print each coordinate onto a x by y coordinate grid
 
-}
 /** Generate initial board 
 
 Reposition ships - so I need to have a remove function that clears the spaces 

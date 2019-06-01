@@ -14,7 +14,8 @@ class Frontpage extends React.Component {
 	state={
 		display: 1
 	}
-
+	componentDidMount(){
+	}
 	playClick = () => this.setState({display:2})
 	friendClick = () => this.setState({display:3})
 	nonfriendClick = () => this.setState({display:4})

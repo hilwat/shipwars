@@ -14,7 +14,7 @@ Second page gametype
 - SVG should move upon hover over change - try svgator? Also make the button darker like first page 
 
 Third page 
-- light grey still there no matter what I do
+- light grey still there no matter what I doA
 - Need to do dynamic code in code that ID to be game link 
 - Social share need to happen - so find how to do the links? trigger popups 
 - Your matched dynamic? Should there be a waiting screen depending on gametype?

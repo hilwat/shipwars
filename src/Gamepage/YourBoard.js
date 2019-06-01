@@ -1,6 +1,10 @@
 import React from "react";
 import './GridSquare.css';
-import {getInitialBoard, getCoordinates} from "./Logic.js"
+
+import {getGrid} from "./Logic.js"
+
+const grid = getGrid()
+console.log(grid)
 
 function numberToLetterSpecial(number){
 	//without 0 in index zero
@@ -15,6 +19,20 @@ function numberToLetter(number){
 }
 
 
+function YourBoard() {
+		const rowArray = Array(10)
+		const gridArray = Array(10).fill(rowArray)
+		return <div className="board"> <ColumnHeader/> <GridColumns style={{width: "20px"}} rows={gridArray}/></div>
+  
+}
+
+function GridColumns(props) {
+	const rows = props.rows
+  const columns = rows.map((row, rowNumber) => 
+	<div className="board-row"><div className="board-square board-head-left">{numberToLetterSpecial(rowNumber)}</div><GridRow grids={rows} rowNumber={rowNumber + 1} boardPosition={props.boardPosition}/></div>
+	)
+  return columns
+}
 const ColumnHeader = () => {
 	const headerArray = Array(11)
 	headerArray.fill(1)
@@ -25,43 +43,44 @@ const ColumnHeader = () => {
 	return <div className="board-row">{something}</div>
 }
 
-function GridColumns(props) {
-	const rows = props.rows
-	const boardPosition = getInitialBoard()
-	console.log(boardPosition)
-  const columns = rows.map((row, rowNumber) => 
-	<div className="board-row"><div className="board-square board-head-left">{numberToLetterSpecial(rowNumber)}</div><GridRow grids={rows} rowNumber={rowNumber + 1} boardPosition={props.boardPosition}/></div>
-	)
-  return columns
-}
 
-function GridRow(props) {
-  const grids = props.grids
-	const rowNumber = props.rowNumber
-	const rowLetter = numberToLetter(rowNumber)
-	const gridItems = grids.map((grid, columnNumber) => 
-		<Grid hasShip={props.boardPosition[columnNumber][rowNumber]} columnNumber={columnNumber +1} rowLetter={rowLetter}/>
-  )
-  return <div className="board-row">{gridItems}</div>
-}
 
-function Grid(props) {
-	const columnNumber = props.columnNumber 
-	const rowLetter = props.rowLetter
-	const color= props.hasShip ? 'blue' : 'green'
-	const styles = {
-		backgroundColor: color
+class GridRow extends React.Component {
+	state = {
 	}
-	const onClick = () => console.log(columnNumber, rowLetter) 
-	return <div className="board-square board-unselected board-normal" onClick={onClick} style= {styles}></div>
+	componentWillMount(){
+		this.setState({grid: grid})
+	}
+	render(){
+		
+		const grids = this.props.grids
+		const rowNumber = this.props.rowNumber
+		const rowLetter = numberToLetter(rowNumber)
+		const gridItems = grids.map((grid, columnNumber) => {
+		//check if ship = shipcode or else 
+			return <Grid shipCode={this.state.grid[columnNumber][rowNumber]} columnNumber={columnNumber +1} rowLetter={rowLetter}/>
+		})
+  		return <div className="board-row">{gridItems}</div>
+	}
 }
 
-function YourBoard(){
-  const rowArray = Array(10)
-	const gridArray = Array(10).fill(rowArray)
-	getCoordinates()
-  return <div className="board"> <ColumnHeader/> <GridColumns style={{width: "20px"}} rows={gridArray}/></div>
+
+class Grid extends React.Component {
+	
+	render() {
+		const columnNumber = this.props.columnNumber 
+		const rowLetter = this.props.rowLetter
+		const color= this.props.shipCode ? 'blue' : 'green'
+		const styles = {
+			backgroundColor: color
+		}
+		const onClick = () => console.log(columnNumber, rowLetter) 
+		return <div className="board-square board-unselected board-normal" onClick={onClick} style= {styles}></div>
+	}
+	
 }
+
+
 
 
 
